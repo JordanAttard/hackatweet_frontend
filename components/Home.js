@@ -20,7 +20,7 @@ function Login() {
             alt="Logo"
             className={styles.smallLogo}
           />
-          <h1 className={styles.title}>See what’s happening now</h1>
+          <h1 className={styles.title}>See what´s happening</h1>
           <h2 className={styles.subtitle}>Join Hackatweet today.</h2>
 
           <button
