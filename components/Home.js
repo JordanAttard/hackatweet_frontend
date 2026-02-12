@@ -1,15 +1,70 @@
-import styles from '../styles/Home.module.css';
+import styles from "../styles/Home.module.css";
+import { useState } from "react";
+import { Modal } from "antd";
 
-function Home() {
+function Login() {
+  const [isSignUpModalVisible, setIsSignUpModalVisible] = useState(false);
+  const [isSignInModalVisible, setIsSignInModalVisible] = useState(false);
+  console.log(isSignUpModalVisible);
+  console.log(isSignInModalVisible);
   return (
-    <div>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-      </main>
+    <div className={styles.container}>
+      <div className={styles.gauche}>
+        <img src="/logo-twitter.png" alt="Logo" className={styles.bigLogo} />
+      </div>
+
+      <div className={styles.droite}>
+        <div className={styles.content}>
+          <img
+            src="/logo-twitter.png"
+            alt="Logo"
+            className={styles.smallLogo}
+          />
+          <h1 className={styles.title}>See what’s happening now</h1>
+          <h2 className={styles.subtitle}>Join Hackatweet today.</h2>
+
+          <button
+            className={styles.signUpBtn}
+            onClick={() => setIsSignUpModalVisible(true)}
+          >
+            Sign up
+          </button>
+          <p className={styles.text}>Already have an account?</p>
+          <button
+            className={styles.signInBtn}
+            onClick={() => setIsSignInModalVisible(true)}
+          >
+            Sign in
+          </button>
+        </div>
+      </div>
+      <Modal
+        open={isSignUpModalVisible}
+        onCancel={() => setIsSignUpModalVisible(false)}
+        footer={null}
+        closable={true}
+        centered
+      >
+        <div style={{ color: "black", padding: "20px" }}>
+          <h2>SignUp</h2>
+          <p>modale fonctionne</p>
+        </div>
+      </Modal>
+
+      <Modal
+        open={isSignInModalVisible}
+        onCancel={() => setIsSignInModalVisible(false)}
+        footer={null}
+        closable={true}
+        centered
+      >
+        <div style={{ color: "black", padding: "20px" }}>
+          <h2>SignIn</h2>
+          <p>modale fonctionne</p>
+        </div>
+      </Modal>
     </div>
   );
 }
 
-export default Home;
+export default Login;

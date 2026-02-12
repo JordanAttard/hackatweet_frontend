@@ -1,3 +1,74 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #151d27;
+  color: white;
+  font-family: "Verdana", sans-serif;
+}
+
+.gauche {
+  flex: 1;
+  background-image: url("/background-twitter.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigLogo {
+  width: 300px;
+  transform: rotate(180deg);
+}
+
+.droite {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smallLogo {
+  width: 50px;
+  transform: rotate(180deg);
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.signUpBtn {
+  background-color: #1d9bf0; /* Bleu Twitter */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.signInBtn {
+  background-color: transparent;
+  color: #1d9bf0;
+  border: 1px solid #1d9bf0;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+}
+
+.text {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -17,6 +88,8 @@
   text-decoration: none;
 }
 
-.title a:hover, .title a:focus, .title a:active {
+.title a:hover,
+.title a:focus,
+.title a:active {
   text-decoration: underline;
 }

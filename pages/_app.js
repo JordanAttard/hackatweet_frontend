@@ -1,5 +1,6 @@
-import '../styles/globals.css';
-import Head from 'next/head';
+import "antd/dist/antd.css";
+import "../styles/globals.css";
+import Head from "next/head";
 
 function App({ Component, pageProps }) {
   return (
