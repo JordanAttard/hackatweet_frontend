@@ -15,7 +15,7 @@
 }
 
 .gauche {
-  flex: 1;
+  flex: 2;
   background-image: url("/background-twitter.png");
   background-size: cover;
   background-position: center;
@@ -30,7 +30,7 @@
 }
 
 .droite {
-  flex: 1;
+  flex: 3;
   display: flex;
   margin-top: 30px;
   margin-left: 30px;
@@ -50,7 +50,7 @@
 }
 
 .signUpBtn {
-  background-color: #1d9bf0; /* Bleu Twitter */
+  background-color: #3690ed;
   color: white;
   border: none;
   border-radius: 20px;
@@ -62,8 +62,8 @@
 
 .signInBtn {
   background-color: transparent;
-  color: #1d9bf0;
-  border: 1px solid #1d9bf0;
+  color: #3690ed;
+  border: 1px solid #3690ed;
   border-radius: 20px;
   padding: 10px 20px;
   font-weight: bold;
@@ -100,13 +100,15 @@
   font-weight: bold;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.signModal {
+  color: white;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.signModal h2 {
+  color: white;
 }
+
+.anticon-close ant-modal-close-icon {
+  color: white;
+}
+/*class="anticon anticon-close ant-modal-close-icon"*/

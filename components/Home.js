@@ -46,8 +46,9 @@ function Login() {
         footer={null}
         closable={true}
         centered
+        className="custom-modal"
       >
-        <div style={{ color: "black", padding: "20px" }}>
+        <div className={styles.signModal}>
           <h2>SignUp</h2>
           <p>modale fonctionne</p>
         </div>
@@ -59,8 +60,9 @@ function Login() {
         footer={null}
         closable={true}
         centered
+        className="custom-modal"
       >
-        <div style={{ color: "black", padding: "20px" }}>
+        <div className={styles.signModal}>
           <h2>SignIn</h2>
           <p>modale fonctionne</p>
         </div>
