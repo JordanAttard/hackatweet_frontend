@@ -1,6 +1,8 @@
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import { Modal } from "antd";
+import SignUp from "./SignUp";
+import SignIn from "./SignIn";
 
 function Login() {
   const [isSignUpModalVisible, setIsSignUpModalVisible] = useState(false);
@@ -48,10 +50,7 @@ function Login() {
         centered
         className="custom-modal"
       >
-        <div className={styles.signModal}>
-          <h2>SignUp</h2>
-          <p>modale fonctionne</p>
-        </div>
+        <SignUp />
       </Modal>
 
       <Modal
@@ -62,10 +61,7 @@ function Login() {
         centered
         className="custom-modal"
       >
-        <div className={styles.signModal}>
-          <h2>SignIn</h2>
-          <p>modale fonctionne</p>
-        </div>
+        <SignIn />
       </Modal>
     </div>
   );
