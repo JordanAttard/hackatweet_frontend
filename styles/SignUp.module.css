@@ -33,6 +33,7 @@
   border-radius: 5px !important;
   margin-bottom: 15px !important;
   height: 45px;
+  color: #c4cbd1;
 }
 
 .input::placeholder {
@@ -69,7 +70,7 @@
 
 .inputPassword :global(.ant-input) {
   background-color: transparent !important;
-  color: #8899a6 !important;
+  color: #c4cbd1;
 }
 
 .inputPassword :global(.anticon) {
