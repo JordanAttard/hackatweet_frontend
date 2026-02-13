@@ -1,0 +1,11 @@
+.center {
+    flex: 2;
+    border-right: 1px solid #1f2a37;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+}
